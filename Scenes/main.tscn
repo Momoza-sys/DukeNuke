@@ -10,8 +10,6 @@
 [node name="Main" type="Node"]
 script = ExtResource("1_21xkr")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="Background" parent="." instance=ExtResource("2_21xkr")]
 
 [node name="Player" parent="Background" instance=ExtResource("3_21xkr")]
@@ -22,3 +20,5 @@ script = ExtResource("1_21xkr")
 position = Vector2(-326, -348)
 
 [node name="UI" parent="." instance=ExtResource("6_ynf5e")]
+
+[node name="Camera2D" type="Camera2D" parent="."]

@@ -1,9 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://dljy64umbt34n"]
+[gd_scene load_steps=4 format=3 uid="uid://dljy64umbt34n"]
 
 [ext_resource type="Script" uid="uid://xklre0kbqdgm" path="res://Scripts/parallax_background.gd" id="1_pojwb"]
 [ext_resource type="Texture2D" uid="uid://15nnv7uk13bo" path="res://Assets/SpaceShooterAssetPack_BackGrounds.png" id="1_sn1xx"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pojwb"]
+size = Vector2(420, 738)
+
 [node name="Background" type="Parallax2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(7, 59)
+shape = SubResource("RectangleShape2D_pojwb")
 
 [node name="parallax_background" type="ParallaxBackground" parent="."]
 script = ExtResource("1_pojwb")
